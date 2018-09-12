@@ -103,7 +103,7 @@ case "$1" in
         echo "$NAME."
         ;;
   reload)
-    echo -n "Restarting $DESC: "
+    echo -n "Reloading $DESC: "
         if [ -f $PIDFILE ];then
             sudo -u $PROG_USER kill -SIGHUP $(cat $PIDFILE)
         fi
